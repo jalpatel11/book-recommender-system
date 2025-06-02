@@ -81,7 +81,7 @@ pip install -r requirements.txt
 ### Step 1: Convert Ratings to LIBSVM Format
 
 ```bash
-python src/preprocess_libsvm.py
+python src/preprocess_libsvm.py --input data/Ratings.csv --output data/ratings.libsvm
 ```
 
 ### Step 2: Run the Recommendation Engine
