@@ -87,8 +87,12 @@ python src/preprocess_libsvm.py --input data/Ratings.csv --output data/ratings.l
 ### Step 2: Run the Recommendation Engine
 
 ```bash
-python src/user_cf_recommender.py
+python src/user_cf_recommender.py --libsvm data/ratings.libsvm --books data/Books.csv --output results/final_recommendations.csv
 ```
+
+- Uses cosine similarity
+- Filters out books without titles
+- Top 5 recommendations are saved
 
 ### Step 3: Visualize the Results
 
